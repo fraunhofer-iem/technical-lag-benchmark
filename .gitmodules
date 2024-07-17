@@ -1,0 +1,27 @@
+[submodule "repositories/vscode"]
+	path = repositories/vscode
+	url = https://github.com/microsoft/vscode
+[submodule "repositories/pxt"]
+	path = repositories/pxt
+	url = https://github.com/microsoft/pxt.git
+[submodule "repositories/azurechat"]
+	path = repositories/azurechat
+	url = https://github.com/microsoft/azurechat.git
+[submodule "repositories/azuredatastudio"]
+	path = repositories/azuredatastudio
+	url = https://github.com/microsoft/azuredatastudio.git
+[submodule "repositories/appcenter-cli"]
+	path = repositories/appcenter-cli
+	url = https://github.com/microsoft/appcenter-cli.git
+[submodule "repositories/vscode-pull-request-github"]
+	path = repositories/vscode-pull-request-github
+	url = https://github.com/microsoft/vscode-pull-request-github.git
+[submodule "repositories/beachball"]
+	path = repositories/beachball
+	url = https://github.com/microsoft/beachball.git
+[submodule "repositories/bhima"]
+	path = repositories/bhima
+	url = https://github.com/IMA-WorldHealth/bhima.git
+[submodule "repositories/pwr-studio"]
+	path = repositories/pwr-studio
+	url = https://github.com/microsoft/PwR-Studio.git

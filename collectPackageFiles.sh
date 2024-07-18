@@ -62,16 +62,3 @@ for REPO in "$BASE_REPO_DIR"/*/; do
         paths+=("$(realpath "$DEST_DIR")")
     fi
 done
-
-# Create the JSON file with the paths
-JSON_FILE="$DESTINATION_DIR/paths.json"
-printf '{"paths": [' > "$JSON_FILE"
-for i in "${!paths[@]}"; do
-    if [ $i -ne 0 ]; then
-        printf ',' >> "$JSON_FILE"
-    fi
-    printf '\n  "%s"' "${paths[$i]}" >> "$JSON_FILE"
-done
-printf '\n]}\n' >> "$JSON_FILE"
-
-echo "Package files have been copied and JSON file has been created successfully."

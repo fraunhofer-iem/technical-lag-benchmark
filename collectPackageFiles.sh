@@ -1,5 +1,5 @@
 #!/bin/bash
-
+git submodule update --remote --merge
 # Base directory containing all repositories
 BASE_REPO_DIR="repositories"
 

@@ -1,6 +1,6 @@
 node_modules/
 paths.json
 dependencyGraphs.json
-statistics/
 graphs/
 .DS_Store
+*-analyzerResult.json

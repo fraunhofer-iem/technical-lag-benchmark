@@ -46,14 +46,15 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: technical_lag_artifacts
-          path: ${{github.workspace}}/pages
+      - name: List artifacts
+        run: ls && ls statistics && ls technical_lag_artifacts
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: 'pages'
+          path: '.'  
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

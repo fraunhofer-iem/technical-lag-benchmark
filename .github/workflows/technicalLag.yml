@@ -24,11 +24,12 @@ jobs:
 
       # Output build artifacts to /github/workspace on the container.
       - name: Execute technical lag calculator
-        uses: fraunhofer-iem/technical-lag-action@v0.0.1
+        uses: fraunhofer-iem/technical-lag-action@v0.0.2
         id: techlag
         with:
-          inputPath: packageFiles/azurechat
+          inputPath: packageFiles
           outputPath: statistics
+          analyzeSubDirs: "true"
 
       - name: Upload Build Artifacts
         uses: actions/upload-artifact@v4
